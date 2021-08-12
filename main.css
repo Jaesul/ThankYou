@@ -1,0 +1,106 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap";
+
+html, body, main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+main {
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.img-container .filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.text-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.6s ease-in-out;
+    padding: 0 1.5em;
+    overflow-y: scroll;
+    background: white;
+}
+
+.text-container p {
+    font-size: 1.5em;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+}
+
+.container p {
+    color: white;
+    padding: 0 1em;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 48px;
+    border: 3px solid #0082FC;
+    transition: all 0.3s ease;
+    margin-bottom: 25%;
+  }
+  
+  button::after {
+    content: "\279C";
+    font-size: 18px;
+    color: #0082FC;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    border-color: #0082FC;
+  }
+  
+  button:hover::after {
+    color: #0082FC;
+  }
+
+  .move-left {
+      transform: translateX(100%);
+  }
+
+
